@@ -24,7 +24,7 @@ Official AllVoiceLab Model Context Protocol (MCP) server, supporting interaction
 - Multi-engine technology unlocks infinite possibilities for voice: With simple text input, you can access video generation, speech synthesis, voice cloning, and more.
 - AI Voice Generator (TTS): Natural voice generation in 30+ languages with ultra-high realism
 - Voice Changer: Real-time voice conversion, ideal for gaming, live streaming, and privacy protection
-- Vocal Separation: Ultra-fast 5ms separation of vocals and background music, with industry-leading precision
+
 - Multilingual Dubbing: One-click translation and dubbing for short videos/films, preserving emotional tone and rhythm
 - Speech-to-Text (STT): AI-powered multilingual subtitle generation with over 98% accuracy
 - Subtitle Removal: Seamless hard subtitle erasure, even on complex backgrounds
@@ -78,7 +78,6 @@ That's it. Your MCP client can now interact with AllVoiceLab.
 | --- | --- |
 | text_to_speech | Convert text to speech |
 | speech_to_speech | Convert audio to another voice while preserving the speech content |
-| isolate_human_voice | Extract clean human voice by removing background noise and non-speech sounds |
 | clone_voice | Create a custom voice profile by cloning from an audio sample |
 | remove_subtitle | Remove hardcoded subtitles from a video using OCR |
 | video_translation_dubbing | Translate and dub video speech into different languages ​​|
@@ -101,19 +100,13 @@ After generating the audio from the previous example, select the audio file and 
 
 ![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/sts_en.png)
 
-### 3. Remove Background Noise
-
-Select an audio file with rich sounds (containing both BGM and human voice) and ask: Remove the background noise.
-
-![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/isolate_en.png)
-
-### 4. Voice Cloning
+### 3. Voice Cloning
 
 Select an audio file with a single voice and ask: Clone this voice.
 
 ![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/clone_en.png)
 
-### 5. Video Translation
+### 4. Video Translation
 
 Select a video file (English) and ask: Translate this video to japanese.
 
@@ -127,7 +120,7 @@ After translation:
 
 ![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/dubbing_en_result.png)
 
-### 6. Remove Subtitles
+### 5. Remove Subtitles
 
 Select a video with subtitles and ask: Remove the subtitles from this video.
 
@@ -141,14 +134,14 @@ After the task is completed:
 
 ![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/remove_subtitle_en_result.png)
 
-### 7. Text Translation
+### 6. Text Translation
 
 Select a long text (for example, "The Foolish Old Man Removes the Mountains") and ask: Translate this text to japanese.
 If no language is specified, it will be translated to English by default.
 
 ![image](https://github.com/allvoicelab/AllVoiceLab-MCP/raw/main/doc/imgs/text_translate_en.png)
 
-### 8. Subtitle Extraction
+### 7. Subtitle Extraction
 
 Select a video with subtitles and ask: Extract the subtitles from this video.
 
